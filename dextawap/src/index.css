@@ -1,10 +1,48 @@
-Body{
-    margin:0px;
-    padding: 0px;
+Body {
+  margin: 0px;
+  padding: 0px;
 }
 
-.SelectChat{
-    background-color: aquamarine;
-    width:250px;
-    height: 300px;
+.SelectChat {
+  background-color: #202123;
+  width: 380px;
+  height: 300px;
+}
+.chats {
+  list-style-type: none;
+  margin: 0px 10px;
+  padding: 0px;
+  overflow: hidden;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.chats li {
+  font-size: medium;
+  color: #e2e3e5;
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.chats li:hover {
+  background-color: #2a2b32;
+}
+.newChat {
+  border: 2px solid #343537;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-left: 6px;
+}
+.svgChat {
+  width: 20px !important;
+
+  color: #e2e3e5;
+}
+.newChatText {
+  color: #e2e3e5;
+  margin-left: 10px;
 }
