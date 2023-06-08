@@ -2,12 +2,13 @@ import react, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './landingPage/Header'
-import Chat from './landingPage/chat'
+import Header from './Components/Header'
+import Chat from './Components/chat'
 function App() {
   return (
     <>
      <Chat />
+
     </>
   )
 }

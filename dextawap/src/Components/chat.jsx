@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import { Scrollbars } from "react-custom-scrollbars-2";
+import panda from "../assets/img/panda.jpg"
 export default function chat() {
   const noOfChats = [
     { id: 1, name: "What is data mining" },
@@ -54,7 +55,7 @@ export default function chat() {
           </div>
         </div>
         <ul className="chats">
-          <Scrollbars style={{ width: 365, height: 300 }}>
+          <Scrollbars style={{ width: 365, height: "50vh" }}>
             {noOfChats &&
               noOfChats.map((chat) => {
                 return (
@@ -79,7 +80,44 @@ export default function chat() {
               })}
           </Scrollbars>
         </ul>
+        <div>
+        </div>
       </div>
+      <div className="SelectChat" style={{backgroundColor:"#151F28"}}>
+          <div className="d-flex justify-content-center py-2" style={{backgroundColor:"black"}}>
+          <img src={panda} width={"100px"} height={"80px"} />
+          </div>
+          <div className="mt-3" style={{marginLeft:"10px"}}>
+              <div className="DextSwap">DEXTSWAP</div>
+              <div className="orTry">Or Try Uniswap</div>
+              <div>
+
+              </div>
+              <div className="dataInput" >
+                <div className="d-flex justify-content-between">
+                  <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <input type="text" className="inputValue" placeholder={"19"} />
+                </div>
+                <div >Balance</div>
+              </div>
+              <div className="dataInput" >
+                <div className="d-flex justify-content-between">
+                  <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <input type="text" className="inputValue" placeholder={"34"} />
+                </div>
+                <div >Balance</div>
+              </div>
+              <button className="connectButton">Connect Wallet</button>
+          </div>
+          </div>
     </>
   );
 }
